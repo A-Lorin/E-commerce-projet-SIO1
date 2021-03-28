@@ -1,0 +1,24 @@
+<!DOCTYPE xml>
+<?php
+	header('Content-Type: application/rss+xml');
+	?>
+	<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+	        <title>Dupont Shop</title>
+	        <description>Flux rss de le boutique de monsieur dupont</description>
+	        <lastBuildDate><?php echo date(DATE_RSS, strtotime($dernieredate->DATE_ANNONCE)) ?></lastBuildDate>
+	        <link>http://127.0.0.1/projet/index.php/Visiteur/accueil</link>
+		
+	        <?php foreach($annonces as $annonce) { ?>
+	        <item>
+	            <title><?php echo $annonce->TITRE ;?></title>
+	            <description><?php echo $annonce->ANNONCE ;?></description>
+	            <pubDate><?php echo date(DATE_RSS, strtotime($annonce->DATE_ANNONCE)) ?></pubDate>
+	            <link>http://127.0.0.1/projet/index.php/Visiteur/accueil</link>
+	        </item>
+	        <?php }?>
+			
+	    </channel>
+</rss>
+    

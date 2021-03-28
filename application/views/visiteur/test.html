@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>M.Dupont's shop</title>
+       <meta charset="utf-8">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="http://127.0.0.1/projet/assets/css/style.css">
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    
+<nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+    <a class="navbar-brand" href="http://127.0.0.1/projet/index.php/Visiteur/accueil">
+    <img class="d-block" style="width:60px;height:38px;'" src="http://127.0.0.1/projet/assets/images/logo" alt="Logo">
+  </a>
+        <ul class="navbar-nav mr-auto">
+            
+   <li class="nav-item">
+   <a href="http://127.0.0.1/projet/index.php/Visiteur/accueil" class="btn btn-info">
+   <span class="fas fa-home"></span> accueil
+   </a></li>
+
+   <li class="nav-item">
+      <a class="btn btn-primary" href="http://127.0.0.1/projet/index.php/Visiteur/listerLesProduits">Lister tous les Produits</a>
+   </li>
+
+   <li class="nav-item dropdown">
+   <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+         categorie
+         </button>
+      <div class="dropdown-menu">
+       <a class="dropdown-item"  href="http://127.0.0.1/projet/index.php/Visiteur/listerLesProduitsparcategorie/16">Action </a> <a class="dropdown-item"  href="http://127.0.0.1/projet/index.php/Visiteur/listerLesProduitsparcategorie/4">Aventure </a> <a class="dropdown-item"  href="http://127.0.0.1/projet/index.php/Visiteur/listerLesProduitsparcategorie/11">Combat </a> <a class="dropdown-item"  href="http://127.0.0.1/projet/index.php/Visiteur/listerLesProduitsparcategorie/15">Coopération </a> <a class="dropdown-item"  href="http://127.0.0.1/projet/index.php/Visiteur/listerLesProduitsparcategorie/3">Course </a> <a class="dropdown-item"  href="http://127.0.0.1/projet/index.php/Visiteur/listerLesProduitsparcategorie/5">Gestion </a> <a class="dropdown-item"  href="http://127.0.0.1/projet/index.php/Visiteur/listerLesProduitsparcategorie/7">Plate-forme </a> <a class="dropdown-item"  href="http://127.0.0.1/projet/index.php/Visiteur/listerLesProduitsparcategorie/8">Simulation </a> <a class="dropdown-item"  href="http://127.0.0.1/projet/index.php/Visiteur/listerLesProduitsparcategorie/19">Sport </a> <a class="dropdown-item"  href="http://127.0.0.1/projet/index.php/Visiteur/listerLesProduitsparcategorie/13">Stratégie </a> <a class="dropdown-item"  href="http://127.0.0.1/projet/index.php/Visiteur/listerLesProduitsparcategorie/2">Survie </a>   </div>
+   </li>
+        </ul>
+    </div>
+
+
+
+
+    <div class="mx-auto order-0">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+
+    <div class="navbar-collapse collapse w-100 order-2 dual-collapse2">
+    <ul class="navbar-nav mx-auto">
+        <li class="nav-item" style=" margin-left:0px;margin-right:0px;">
+    <form class="form-inline" method="post" action="http://127.0.0.1/projet/index.php/Visiteur/recherche">
+   <input class="form-control mr-sm-2" type="text" name="search" id='search' placeholder="Search">
+   <button class="btn btn-success" type="submit">
+            <i class="fas fa-search"></i>
+        </button></form></li></ul>
+        </div>
+
+
+
+
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+   <a href="http://127.0.0.1/projet/index.php/Visiteur/afficherPanier" class="btn btn-info btn-md">
+   <span class="fas fa-shopping-cart">(10)</span>
+        </a>
+        </li>
+
+           
+
+        <li class="nav-item dropdown">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+         mon compte
+         </button>
+      <div class="dropdown-menu">
+                  <a class="dropdown-item" href="http://127.0.0.1/projet/index.php/Visiteur/seConnecter">Se connecter</a>
+         <a class="dropdown-item" href="http://127.0.0.1/projet/index.php/Visiteur/senregistrer">Se crée un compte</a>
+               </div>
+   </li>
+
+           <li class="nav-item droite">
+   <a href="http://127.0.0.1/projet/index.php/Visiteur/connexionAdministrateur" class="fas fa-lock"></a>
+        </li>
+           </ul>
+    </div>
+</nav>
+<main>
+
+
+<form action="http://127.0.0.1/projet/index.php/visiteur/updateCart" method="post" accept-charset="utf-8">
+<div class="container col-7">
+<h2>Panier</h2>
+
+<div class="row align-items-center">
+<table class="table table-responsive-lg">
+
+<tr>
+        <th width="10%"></th>
+        <th width="30%">Produit</th>
+        <th width="15%">Prix</th>
+        <th width="13%">Quantité</th>
+        <th width="25%">total pour ce produit</th>
+        <th width="12%"></th>
+</tr>
+
+
+    <tr><td style="display:none;">
+<input type="hidden" name="1[rowid]" value="c81e728d9d4c2f636f067f89cc14862c" />
+</td></tr>
+        <tr>
+        <td>
+                                <a href="http://127.0.0.1/projet/index.php/Visiteur/voirUnProduit/2"><img src="http://127.0.0.1/projet/assets/images/GTA5" width="80"/></a>
+                            </td>
+                <td><a  href="http://127.0.0.1/projet/index.php/Visiteur/voirUnProduit/2">GTA V</a></td>
+                <td>14.39€</td>
+                <td><input type="number" name="1[qty]" value="8" class="form-control" style="width:75px" min="1" max="32.00"  />
+</td>
+                <td>115.12€</td>
+                <td><a href="http://127.0.0.1/projet/index.php/visiteur/removeItem/c81e728d9d4c2f636f067f89cc14862c" class="btn btn-danger"><i class="fas fa-trash"></i></a></td>
+                 </tr>
+
+
+    <tr><td style="display:none;">
+<input type="hidden" name="2[rowid]" value="eccbc87e4b5ce2fe28308fd9f2a7baf3" />
+</td></tr>
+        <tr>
+        <td>
+                                <a href="http://127.0.0.1/projet/index.php/Visiteur/voirUnProduit/3"><img src="http://127.0.0.1/projet/assets/images/R6" width="80"/></a>
+                            </td>
+                <td><a  href="http://127.0.0.1/projet/index.php/Visiteur/voirUnProduit/3">Rainbow Six Siege</a></td>
+                <td>17.99€</td>
+                <td><input type="number" name="2[qty]" value="2" class="form-control" style="width:75px" min="1" max="99.00"  />
+</td>
+                <td>35.98€</td>
+                <td><a href="http://127.0.0.1/projet/index.php/visiteur/removeItem/eccbc87e4b5ce2fe28308fd9f2a7baf3" class="btn btn-danger"><i class="fas fa-trash"></i></a></td>
+                 </tr>
+
+
+        <tr>
+            <td><a href="http://127.0.0.1/projet/index.php/visiteur/ListerLesProduits" class="btn btn-warning">Continuer vos achats</a></td>
+            <td colspan="2"></td>
+            <td><input type="submit" name="quantité" value="Modifier la quantité"  class='btn btn-info' />
+</td>
+                        <td>Total: 151.1 €</td>
+                        <td><a href="http://127.0.0.1/projet/index.php/visiteur/seConnecter" class="btn btn-success">Passer la commande</a></td>
+                    </tr>
+
+</table>
+</form>
+</div>
+</div>
+
+</main>
+<Div class="navbar piedpage" style="background: #2d3246;">
+<div class='container-fluid '>
+
+        	<div class="col-sm-3">
+            	<h2><img class="d-block" style="height:64px;'" src="http://127.0.0.1/projet/assets/images/logo" alt="Logo"></h2>
+                <p>Projet web<br/>Site marchand</p>
+                <p>© 2020</p><br/>
+            </div>
+        	<div class="col-sm-3">
+            	<h4>Nous contacter</h4>
+                <p><a href='https://www.google.fr/maps/place/8+Rue+Rabelais,+22000+Saint-Brieuc/@48.5042205,-2.7503218,17z/data=!3m1!4b1!4m5!3m4!1s0x480e1d185a2011d3:0xca3c59f0bff91073!8m2!3d48.5042205!4d-2.7481331'><i class="fas fa-map-marker-alt"></i> 8 Rue Rabelais, 22000 Saint-Brieuc</a></p>
+                <p><a href='mailto:Dupont@yopmail.com'><i class="fas fa-envelope"></i> Dupont@yopmail.com</a></p>
+                <p><a href='tel:+332 96 68 32 70'><i class="fas fa-phone"></i> 02 96 68 32 70</a></p><br/>
+            </div>
+        	<div class="col-sm-3">
+            	<h4>Nous suivre</h4>
+                	<p><a href="https://www.facebook.com/DupontShop"><i class="fab fa-facebook-square"></i> Facebook</a></p>
+                	<p><a href="https://www.twitter.com/DupontShop"><i class="fab fa-twitter-square"></i> Twitter</a></p>
+                	<p><a href="https://www.Instagram.com/DupontShop"><i class="fab fa-instagram"></i> Instagram</a></p><br/>
+            </div>
+            
+        	<div class="col-sm-2">
+            	<h4>Newsletter</h4>
+                <p>Abonnez vous à notre newsletter pour ne rater aucune nouveauté</p>
+                <p>
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="votre mail">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><span> <i class="fas fa-envelope-square"></i></span></button>
+                      </span>
+                    </div>
+                 <br/><br/>
+            </div>
+        
+        </div>
+</div>
+</body>
+
+</html>
