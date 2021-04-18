@@ -101,8 +101,7 @@ CREATE TABLE IF NOT EXISTS `avis` (
 INSERT INTO `avis` (`NOAVIS`, `NOCLIENT`, `NOPRODUIT`, `AVIS`, `TITRECOMMENTAIRE`, `COMMENTAIRE`, `DATEAVIS`, `MODIFIER`) VALUES
 (73, 1, 42, 3, 'Fun', 'Pas mal', '2020-07-03', 1),
 (74, 1, 1, 1, 'Très répétitif', 'Le jeu est trop répétitif', '2020-07-05', NULL),
-(75, 1, 3, 5, 'Bon jeu', 'Le jeu est bien', '2020-07-02', NULL),
-(76, 7, 42, 2, 'pas ouf', 'le jeu n\'est pas terrible', '2020-09-01', NULL);
+(75, 1, 3, 5, 'Bon jeu', 'Le jeu est bien', '2020-07-02', NULL);
 
 -- --------------------------------------------------------
 
